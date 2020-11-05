@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>zadacha_2_7</title>
+  <style>
+   input:valid + span {
+    content: url(ok.png);
+    padding-left: 5px;
+   }
+   input:invalid + span {
+    content: url(nook.png);
+    padding-left: 5px;
+   }
+   input[type="number"] {
+    margin-right: -3px;
+   }
+  </style>
+ </head>
+ <body>
+
+ <center>
+   <p>Имя пользователя: <input class="name" type="text" required><span ></span></p>
+   <p>Сколько вам лет? <input type="number" size="3" required><span></span></p>
+   <p>Вы учитесь или работаете? <input type="text" required><span></span></p>
+   <p>Сколько у вас свободного времени? <input type="text" required><span></span></p>
+   <p>Что вы обычно делаете в свободное время? <input class="freeTime" type="text"><span ></span></p>
+   <p><input type="submit" value="Отправить"></p>
+</center>
+ </body>
+</html>
